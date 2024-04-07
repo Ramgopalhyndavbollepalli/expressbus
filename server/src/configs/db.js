@@ -12,7 +12,7 @@ const mongoose = require("mongoose");
 
 let connect = () => {
   return mongoose.connect(
-    "mongodb+srv://raman:raman@cluster0.fm7rpoi.mongodb.net/ecom",
+    process.env.MONGO_PATH,
     { useNewUrlParser: true }
   ); 
 };

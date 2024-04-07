@@ -31,7 +31,7 @@ function Bookseat() {
   async function getdata() {
     // console.log(param.id);
     try {
-      let res = await axios.post("https://blue-bus.onrender.com/bus/one", {
+      let res = await axios.post("http://localhost:8080/bus/one", {
         id: param.id,
       });
       // console.log("OK", res.data);
@@ -258,6 +258,50 @@ function Bookseat() {
                 </div>
               </div>
             </div>
+            <br></br>
+            <button
+              style={{
+                backgroundColor: "grey",
+                width: "20px",
+                height: "20px",
+                color: "white",
+                borderRadius: "5px",
+              }
+              }
+              disabled="true"
+            >
+            </button>
+                  Available
+            <br></br>
+
+            <button
+              style={{
+                backgroundColor: "green",
+                width: "20px",
+                height: "20px",
+                color: "white",
+                borderRadius: "5px",
+              }
+              }
+              disabled="true"
+            >
+            </button>
+            Selected
+            <br></br>
+
+            <button
+              style={{
+                backgroundColor: "red",
+                width: "20px",
+                height: "20px",
+                color: "white",
+                borderRadius: "5px",
+              }
+              }
+              disabled="true"
+            >
+            </button>
+            Booked
           </div>
 
           <div className={styles.busdata}>

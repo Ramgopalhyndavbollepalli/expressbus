@@ -48,7 +48,7 @@ export const sendOrderRequest = async (
   };
 
   try {
-    await axios.post("https://blue-bus.onrender.com/order", payload, {
+    await axios.post("http://localhost:8080/order", payload, {
       headers: { Authorization: `Bearer ${token}` },
     });
 
