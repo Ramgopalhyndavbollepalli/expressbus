@@ -15,16 +15,16 @@ function Footer() {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div>
                 <h3>
-                  <span style={{ color: "#ffff00" }}>Express</span>Bus
+                  <span style={{ color: "#ffff00" }}>Bus</span>Booking
                 </h3>
-                <p className="mb-30 footer-desc">
-                The company itself is a very successful company. To
-                  loosed them easily because he hates the right choice and him in time
-                  I will come here for any duties,
+                <p className="mb-90 footer-desc">
+                Discover, book, and manage bus tickets effortlessly with our user-friendly platform. Search buses, explore routes, view bus details, and book tickets securely. Access your booking history and manage reservations hassle-free. Start your journey with ease!
+
+
                 </p>
               </div>
             </div>
-            <div className="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+            {/* <div className="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
               <div className="">
                 <h4>Book</h4>
                 <ul className="list-unstyled">
@@ -78,9 +78,9 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center"> */}
             <div className="copyright">
-                2023  All rights reserved.            
+                @2024  All rights reserved.            
             </div>
           </div>
         </div>

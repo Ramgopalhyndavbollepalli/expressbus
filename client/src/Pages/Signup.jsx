@@ -35,7 +35,7 @@ function Signup() {
     } else {
       try {
         let response = await axios.post(
-          "http://localhost:8080/user/signup",
+          "http://44.217.43.4:8080/user/signup",
           signUpcreds
         );
         console.log(response);
