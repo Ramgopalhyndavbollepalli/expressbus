@@ -26,7 +26,7 @@ function Myticket() {
 
   async function getdata(id) {
     try {
-      let res = await axios.post("http://44.217.43.4:8080/order/myticket", {
+      let res = await axios.post("http://54.161.0.165:8080/order/myticket", {
         id,
       });
       // console.log(res);
@@ -45,7 +45,7 @@ function Myticket() {
   async function getdataToday() {
     let id = Cookies.get("userid");
     try {
-      let res = await axios.post("http://44.217.43.4:8080/order/myticket/today", {
+      let res = await axios.post("http://54.161.0.165:8080/order/myticket/today", {
         id,
       });
       // console.log("today", res);
@@ -66,7 +66,7 @@ function Myticket() {
     let id = Cookies.get("userid");
     try {
       let res = await axios.post(
-        "http://44.217.43.4:8080/order/myticket/upcoming",
+        "http://54.161.0.165:8080/order/myticket/upcoming",
         {
           id,
         }
@@ -87,7 +87,7 @@ function Myticket() {
   async function getdataPast() {
     let id = Cookies.get("userid");
     try {
-      let res = await axios.post("http://44.217.43.4:8080/order/myticket/past", {
+      let res = await axios.post("http://54.161.0.165:8080/order/myticket/past", {
         id,
       });
       // console.log("past", res);
@@ -108,7 +108,7 @@ function Myticket() {
     let userid1 = Cookies.get("userid");
     try {
       let res = await axios.delete(
-        `http://44.217.43.4:8080/order/oneorder/:${userid}`
+        `http://54.161.0.165:8080/order/oneorder/:${userid}`
       );
       getdata(userid1);
       success("Ticket Cancelled Successfully");

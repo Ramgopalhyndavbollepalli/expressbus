@@ -44,7 +44,7 @@ function SelectBus() {
   async function getdata(from, to, date) {
     // console.log(from, to, date);
     try {
-      let res = await axios.post("http://44.217.43.4:8080/bus/getall", {
+      let res = await axios.post("http://54.161.0.165:8080/bus/getall", {
         from,
         to,
         date,

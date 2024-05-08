@@ -38,7 +38,7 @@ export const initPayment = (
     handler: async function (response) {
       try {
         const { data } = await axios.post(
-          "http://44.217.43.4:8080/api/payment/verify",
+          "http://54.161.0.165:8080/api/payment/verify",
           response
         );
 

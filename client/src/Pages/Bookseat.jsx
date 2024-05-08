@@ -31,7 +31,7 @@ function Bookseat() {
   async function getdata() {
     // console.log(param.id);
     try {
-      let res = await axios.post("http://44.217.43.4:8080/bus/one", {
+      let res = await axios.post("http://54.161.0.165:8080/bus/one", {
         id: param.id,
       });
       // console.log("OK", res.data);

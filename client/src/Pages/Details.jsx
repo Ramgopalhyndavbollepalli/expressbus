@@ -61,7 +61,7 @@ function Details() {
     }
 
     const { data } = await axios.post(
-      "http://44.217.43.4:8080/api/payment/ticket",
+      "http://54.161.0.165:8080/api/payment/ticket",
       {
         amount: amount,
       }

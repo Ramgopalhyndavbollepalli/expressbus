@@ -48,7 +48,7 @@ export const sendOrderRequest = async (
   };
 
   try {
-    await axios.post("http://44.217.43.4:8080/order", payload, {
+    await axios.post("http://54.161.0.165:8080/order", payload, {
       headers: { Authorization: `Bearer ${token}` },
     });
 

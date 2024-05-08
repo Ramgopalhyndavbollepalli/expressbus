@@ -70,7 +70,7 @@ function Slider() {
 
   const handleGetRequest = async () => {
     try {
-      let res = await axios.post("http://44.217.43.4:8080/city", {
+      let res = await axios.post("http://54.161.0.165:8080/city", {
         source,
       });
       res = res.data;
@@ -84,7 +84,7 @@ function Slider() {
 
   const handleGetRequestdes = async () => {
     try {
-      let res = await axios.post("http://44.217.43.4:8080/city", {
+      let res = await axios.post("http://54.161.0.165:8080/city", {
         destination,
       });
       res = res.data;
@@ -119,7 +119,7 @@ function Slider() {
 
   async function getcityinfo(source, destination, date) {
     try {
-      let res = await axios.post("http://44.217.43.4:8080/city/showcity", {
+      let res = await axios.post("http://54.161.0.165:8080/city/showcity", {
         source,
         destination,
         date,
